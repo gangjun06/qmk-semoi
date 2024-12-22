@@ -155,16 +155,17 @@ const template = ({
 
 #include "quantum.h"
 
-#define SEMOI_SHORTCUT_SIZE ${maxShortcutSize}
-#define SHORTCUT_DUBEOLSIK_SIZE ${maxDubelsikSize}
+#ifdef SEMOI_SHORTCUTS_ENABLE
 
-// 1000 0000
+#define SEMOI_SHORTCUT_SIZE ${maxShortcutSize}
+#define SEMOI_SHORTCUT_DUBEOLSIK_SIZE ${maxDubelsikSize}
+
 #define SHIFT_MASK 0x80
 #define SFT(x) (SHIFT_MASK | (x))
 
 typedef struct {
     const uint8_t shortcuts[SEMOI_SHORTCUT_SIZE];
-    const uint8_t dubelsik[SHORTCUT_DUBEOLSIK_SIZE];
+    const uint8_t dubelsik[SEMOI_SHORTCUT_DUBEOLSIK_SIZE];
 } SemoiShortcut;
 
 #define SEMOI_SHORTCUT_COUNT ${shortcutSize}
@@ -174,6 +175,8 @@ const int semoi_shortcut_index[] = {${semoiShortcutIndex.join(",")}};
 const SemoiShortcut semoi_shortcut[SEMOI_SHORTCUT_COUNT] = {
 ${semoiShortcutStr}
 };
+
+#endif
 `;
 
 async function main() {
