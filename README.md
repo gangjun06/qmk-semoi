@@ -48,6 +48,7 @@ flowchart LR
 ```makefile
 # ...... 기존 코드
 
+DEFERRED_EXEC_ENABLE = yes
 SRC += semoi.c
 ```
 
@@ -84,6 +85,18 @@ void matrix_scan_user(void) {
     matrix_scan_semoi();
 }
 ```
+
+- (선택) 필요할 경우, 아래 [설정](#설정) 항목을 참고하여 설정을 변경합니다.
+
+## 설정
+
+| Define                          | Default | Description                                                      |
+| ------------------------------- | ------- | ---------------------------------------------------------------- |
+| #define SEMOI_SHORTCUTS_ENABLED | -       | 모아치기 약어 사용설정                                           |
+| #define SEMOI_TIMEOUT_MS        | 300     | 최대 몇 ms 까지 상태를 유지할지 설정                             |
+| #define SEMOI_DEFER_TIME        | 30      | 최대 몇 ms 까지 동시 입력/변환을 허용할지 설정                   |
+| #define SEMOI_COMPLETE_COMPOSE  | -       | 모아치기시 ARROW_RIGHT를 자동으로 눌러 글자가 분해되는 문제 방지 |
+
 
 
 ## 참고 자료
