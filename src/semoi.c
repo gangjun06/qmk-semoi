@@ -1,6 +1,13 @@
 /**
- * https://getreuer.info/posts/keyboards/triggers/index.html#based-on-previously-typed-keys
- * https://gall.dcinside.com/mgallery/board/view/?id=mechanicalkeyboard&no=1484112
+░██████╗░███╗░░░███╗██╗░░██╗░░░░░░░██████╗███████╗███╗░░░███╗░█████╗░██╗
+██╔═══██╗████╗░████║██║░██╔╝░░░░░░██╔════╝██╔════╝████╗░████║██╔══██╗██║
+██║██╗██║██╔████╔██║█████═╝░█████╗╚█████╗░█████╗░░██╔████╔██║██║░░██║██║
+╚██████╔╝██║╚██╔╝██║██╔═██╗░╚════╝░╚═══██╗██╔══╝░░██║╚██╔╝██║██║░░██║██║
+░╚═██╔═╝░██║░╚═╝░██║██║░╚██╗░░░░░░██████╔╝███████╗██║░╚═╝░██║╚█████╔╝██║
+░░░╚═╝░░░╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░░░░╚═════╝░╚══════╝╚═╝░░░░░╚═╝░╚════╝░╚═╝
+ * github: https://github.com/gangjun06/qmk-semoi
+ * license: https://github.com/gangjun06/qmk-semoi/blob/main/LICENSE
+ * version: 0.1.0 (2024-12-23)
  */
 
 #include "semoi.h"
