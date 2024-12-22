@@ -90,12 +90,12 @@ void matrix_scan_user(void) {
 
 ## 설정
 
-| Define                          | Default | Description                                                      |
-| ------------------------------- | ------- | ---------------------------------------------------------------- |
-| #define SEMOI_SHORTCUTS_ENABLED | -       | 모아치기 약어 사용설정                                           |
-| #define SEMOI_TIMEOUT_MS        | 300     | 최대 몇 ms 까지 상태를 유지할지 설정                             |
-| #define SEMOI_DEFER_TIME        | 30      | 최대 몇 ms 까지 동시 입력/변환을 허용할지 설정                   |
-| #define SEMOI_COMPLETE_COMPOSE  | -       | 모아치기시 ARROW_RIGHT를 자동으로 눌러 글자가 분해되는 문제 방지 |
+| Define                         | Default | Description                                                      |
+| ------------------------------ | ------- | ---------------------------------------------------------------- |
+| #define SEMOI_SHORTCUTS_ENABLE | -       | 모아치기 약어 사용설정                                           |
+| #define SEMOI_TIMEOUT_MS       | 300     | 최대 몇 ms 까지 상태를 유지할지 설정                             |
+| #define SEMOI_DEFER_TIME       | 30      | 최대 몇 ms 까지 동시 입력/변환을 허용할지 설정                   |
+| #define SEMOI_COMPLETE_COMPOSE | -       | 모아치기시 ARROW_RIGHT를 자동으로 눌러 글자가 분해되는 문제 방지 |
 
 
 
